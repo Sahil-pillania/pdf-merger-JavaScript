@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Merger js</title>
+    <style></style>
+  </head>
+  <body style="background-color: rgb(197, 223, 47)">
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      "
+    >
+      <h1 style="text-decoration: underline; margin-bottom: 12px">
+        PDF world. Merge your pdfs here
+      </h1>
+      <form method="POST" action="/merge" enctype="multipart/form-data">
+        <div class="form-group">
+          <div class="mb-3">
+            <label
+              for="formFileMultiple"
+              class="form-label"
+              style="font-size: 25px; margin-bottom: 15px"
+              >Upload your file here...</label
+            >
+            <input
+              class="form-control"
+              type="file"
+              id="formFileMultiple"
+              multiple
+              accept=".pdf"
+              name="pdfs"
+            />
+            <input
+              type="submit"
+              value="Submit"
+              style="
+                padding: 8px;
+                background-color: aqua;
+                margin: 12px;
+                border-radius: 6px;
+              "
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
