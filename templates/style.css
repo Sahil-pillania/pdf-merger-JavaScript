@@ -1,0 +1,7 @@
+#btn input {
+  transition: all 0.4s linear;
+}
+
+#btn:hover input {
+  transform: scale(1.1);
+}
